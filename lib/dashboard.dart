@@ -114,10 +114,10 @@ class _DashboardState extends State<Dashboard> {
                   }),
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             SizedBox(
-              height: 500,
+              height: 250,
               width: double.infinity,
               child: ListView.builder(
                   scrollDirection: Axis.vertical,
@@ -146,8 +146,8 @@ class _DashboardState extends State<Dashboard> {
           children: [
             Image.asset(
               pic,
-              width: double.infinity,
-              height: 250,
+              width: 150,
+              height: 150,
             ),
             const SizedBox(
               height: 10,

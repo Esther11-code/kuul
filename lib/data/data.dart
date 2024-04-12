@@ -25,7 +25,7 @@ final books = [
     'title': 'All Alone',
     'author': 'Janet Jay',
     'year': '2026',
-    'img': 'images/book4.jpg',
+    'img': 'images/book4.webp',
   },
   {
     'id': 5,

@@ -33,7 +33,7 @@ class _BookCardState extends State<BookCard> {
 
   // add to wishlist
   void addList() {
-    Provider.of<MyProvider>(context, listen: false).addWhishlist({
+    Provider.of<MyProvider>(context, listen: false).addWishlist({
       'img': widget.book['img'],
       'title': widget.book['title'],
       'author': widget.book['author'],

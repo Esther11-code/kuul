@@ -23,12 +23,12 @@ class MyProvider extends ChangeNotifier {
 
     notifyListeners();
   }
-  void addWhishlist(Map<String, dynamic> product){
+  void addWishlist(Map<String, dynamic> product){
     wishlist.add(product);
 
     notifyListeners();
   }
-  void removeWhishlist(Map<String, dynamic> product){
+  void removeWishlist(Map<String, dynamic> product){
     wishlist.remove(product);
 
     notifyListeners();

@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:kuul/dashboard.dart';
+import 'package:kuul/home_page.dart';
+import 'package:kuul/library/library.dart';
+import 'package:kuul/wishlist/wishlist.dart';
 
 class MyDrawer extends StatelessWidget {
   final String name;
@@ -36,7 +40,8 @@ class MyDrawer extends StatelessWidget {
               'Store',
               style: TextStyle(color: Colors.amber),
             ),
-            onTap: () {},
+            onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (BuildContext context) => Dashboard(name: name, email: email))),
           ),
           const SizedBox(
             height: 20,
@@ -46,7 +51,8 @@ class MyDrawer extends StatelessWidget {
               'My Library',
               style: TextStyle(color: Colors.amber),
             ),
-            onTap: () {},
+            onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (BuildContext context) => Library(name: name, email: email))),
           ),
           const SizedBox(
             height: 20,
@@ -66,7 +72,8 @@ class MyDrawer extends StatelessWidget {
               'My Wishlist',
               style: TextStyle(color: Colors.amber),
             ),
-            onTap: () {},
+            onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (BuildContext context) => Wishlist(name: name, email: email))),
           ),
           const SizedBox(
             height: 20,
@@ -86,7 +93,8 @@ class MyDrawer extends StatelessWidget {
               'Log Out',
               style: TextStyle(color: Colors.amber),
             ),
-            onTap: () {},
+            onTap: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+              builder: (BuildContext context) => const HomePage())),
           ),
         ],
       ),
