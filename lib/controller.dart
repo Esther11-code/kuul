@@ -53,8 +53,8 @@ class _MyPageViewState extends State<MyPageView> {
                   child: Text(
                     'Second Page',
                     style: TextStyle(color: Colors.white, fontSize: 24.0),
-                  ),
-                ),
+                  )
+                )
               ),
               // Third Page
               Container(
@@ -63,7 +63,7 @@ class _MyPageViewState extends State<MyPageView> {
                   child: Text(
                     'Third Page',
                     style: TextStyle(color: Colors.white, fontSize: 24.0),
-                  ),
+                  )
                 ),
               ),
             ],
